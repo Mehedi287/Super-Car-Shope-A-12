@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Manufacturer",
+        "comment": " Automotive Engineering has gained recognition and importance ever since motor vehicles capable for transporting passengers has been in vogue.It offers the mobility and flexibility of use demanded by an enormous variety of lifestyles and industries. Automobiles affect every aspect of society, from the .",
+        "rating": 4
+    },
+    {
+        "name": "Automobile",
+        "comment": "A car is a wheeled motor vehicle used for transportation. Most definitions of cars say that they run primarily on roads, seat one-to-eight people, have four wheels and mainly transport people rather than goods. Cars came into global use during the 20th century, and developed economies depend on them",
+        "rating": 4
+    },
+    {
+        "name": "Production",
+        "comment": "Production is the process of combining various material inputs and immaterial inputs in order to make something for consumption. It is the act of creating an output, a good or service which has value and",
+        "rating": 4
+    }
+]
