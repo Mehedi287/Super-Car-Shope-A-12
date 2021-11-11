@@ -1,17 +1,19 @@
+import { Box } from '@mui/system';
 import React from 'react';
-import Footer from '../../Shered/Footer/Footer';
-import Navigation from '../../Shered/Navigation/Navigation';
+import AboutUs from '../AboutUs/AboutUs';
+
 import Banner from '../Banner/Banner';
 import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
-        <div>
+        <Box sx={{ mt: 1 }}>
             <Banner></Banner>
             <Products></Products>
             <Reviews></Reviews>
-        </div>
+            <AboutUs></AboutUs>
+        </Box>
     );
 };
 

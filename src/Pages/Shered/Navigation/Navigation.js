@@ -10,7 +10,7 @@ import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../hook/useAuth';
 // import useAuth from './../../../hooks/useAuth';
 const Navigation = () => {
-    // const { logout, login, user } = useAuth()
+
     const { user, logout } = useAuth()
     return (
         <Box sx={{ flexGrow: 1, mb: 5 }}>
@@ -26,15 +26,13 @@ const Navigation = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Doctors Portal
+                        SUPER CAR SHOP
                     </Typography>
                     <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/home">
                         <Button color="inherit">Home</Button>
                     </NavLink>
-                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/home">
-                        <Button color="inherit">About US</Button>
-                    </NavLink>
-                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/home">
+
+                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/services">
                         <Button color="inherit">Services</Button>
                     </NavLink>
                     {
@@ -42,6 +40,8 @@ const Navigation = () => {
                             <Box>
 
                                 <Button onClick={logout} color="inherit">Logout</Button>
+                                <Button color="inherit"><Link to="/dashboard" style={{ textDecoration: "none", color: "white" }}>Dashboard</Link></Button>
+
                             </Box>
                             :
                             <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/login">
