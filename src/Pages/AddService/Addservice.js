@@ -7,7 +7,7 @@ const Addservice = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
 
-        axios.post("http://localhost:5000/services", data)
+        axios.post("https://powerful-caverns-71105.herokuapp.com/services", data)
             .then(res => {
 
                 if (res.data.insertedId) {

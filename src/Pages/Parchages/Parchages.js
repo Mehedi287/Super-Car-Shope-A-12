@@ -22,7 +22,7 @@ const Parchages = () => {
     const onSubmit = data => {
         data.img = detail.img;
         data.itemName = detail.name;
-        axios.post("http://localhost:5000/orders", data)
+        axios.post("https://powerful-caverns-71105.herokuapp.com/orders", data)
             .then(res => {
                 console.log(res);
 
@@ -33,7 +33,7 @@ const Parchages = () => {
     };
 
     useEffect(() => {
-        const url = `http://localhost:5000/services/${serviceId}`
+        const url = `https://powerful-caverns-71105.herokuapp.com/services/${serviceId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setDetail(data))

@@ -28,6 +28,8 @@ import useAuth from '../hook/useAuth';
 import ManageOrders from './ManageOrders/ManageOrders';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
 import AdminRoute from './AdminRoute/AdminRoute';
+import Products from '../Home/Products/Products';
+import ManageProduct from './ManageProduct/ManageProduct';
 
 
 const drawerWidth = 200;
@@ -68,6 +70,10 @@ function Dashboard(props) {
                     </ListItem>
                         <ListItem button key=''>
                             <Link style={{ textDecoration: "none", color: "black" }} to={`${url}/manageOrder`}><Button color="inherit">Manage Orders</Button></Link>
+
+                        </ListItem>
+                        <ListItem button key=''>
+                            <Link style={{ textDecoration: "none", color: "black" }} to={`${url}/products`}><Button color="inherit">Manage Product</Button></Link>
 
                         </ListItem>
                         <ListItem button key=''>
@@ -158,6 +164,9 @@ function Dashboard(props) {
                     </AdminRoute>
                     <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
+                    </AdminRoute>
+                    <AdminRoute path={`${path}/products`}>
+                        <ManageProduct></ManageProduct>
                     </AdminRoute>
 
                 </Switch>

@@ -14,9 +14,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Parchages from './Pages/Parchages/Parchages';
 import Dashboard from './Pages/Dashboard/Dashboard';
-import Pay from './Pages/Dashboard/Pay/Pay';
-import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
-import Review from './Pages/Dashboard/Review/Review';
+
 
 function App() {
   return (

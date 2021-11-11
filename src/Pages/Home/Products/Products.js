@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Products = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5000/services`;
+        const url = `https://powerful-caverns-71105.herokuapp.com/services`;
         fetch(url)
             .then(res => res.json())
             .then(data => setServices(data))

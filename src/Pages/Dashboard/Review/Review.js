@@ -13,7 +13,7 @@ const Review = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post("http://localhost:5000/reviews", data)
+        axios.post("https://powerful-caverns-71105.herokuapp.com/reviews", data)
             .then(res => {
 
                 if (res.data.insertedId) {

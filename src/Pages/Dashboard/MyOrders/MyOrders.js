@@ -9,12 +9,12 @@ const MyOrders = () => {
     const { user } = useAuth()
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://powerful-caverns-71105.herokuapp.com/orders/${user.email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
     const handleDelete = id => {
-        axios.delete(`http://localhost:5000/orders/${id}`)
+        axios.delete(`https://powerful-caverns-71105.herokuapp.com/orders/${id}`)
             .then(res => {
                 if (res.data.deletedCount) {
                     const remain = orders.filter(order => order._id !== id);

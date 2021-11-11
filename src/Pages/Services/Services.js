@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/services")
+        fetch("https://powerful-caverns-71105.herokuapp.com/services")
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
